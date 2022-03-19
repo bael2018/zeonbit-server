@@ -11,10 +11,6 @@ app.use(cors())
 app.use(express.json())
 app.use('/api' , router)
 
-app.get('/' , (req , res) => {
-    res.end('<h3>sdfsdfd</h3>')
-})
-
 const start = async () => {
     try {
         await sequelize.authenticate();
