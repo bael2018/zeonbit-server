@@ -12,7 +12,7 @@ app.use(express.json())
 app.use('/api' , router)
 
 app.get('/' , (req , res) => {
-    res.json({message: 'sdfsd'})
+    res.end('<h3>sdfsdfd</h3>')
 })
 
 const start = async () => {
